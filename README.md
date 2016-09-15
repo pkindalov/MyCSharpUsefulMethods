@@ -1,4 +1,5 @@
  
+<<<<<<< HEAD
 		#MyCSharpUsefulMethods#
 		####Different methods in C# ####
 		
@@ -18,3 +19,8 @@
 		
 		Result: Some tex2 Some text2 Some tex2 Some text2 Some tex2
 		
+=======
+		# MyCSharpUsefulMethods
+		
+		#### Different methods in C Sharp
+>>>>>>> 9256c4c43dec63ce56a5f120c3e415c60b8ef85d
