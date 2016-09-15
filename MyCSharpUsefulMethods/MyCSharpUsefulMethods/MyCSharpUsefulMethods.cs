@@ -33,6 +33,8 @@ namespace MyCSharpUsefulMethods
 
             string someText = printCharsString("Some text2", 5);
             Console.WriteLine(someText);
+
+           
         }
     }
 }
