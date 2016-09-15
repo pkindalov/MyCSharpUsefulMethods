@@ -24,6 +24,7 @@ namespace MyCSharpUsefulMethods
         }
 
 
+        //same method like this on top but this time no return value. Cw - mean in method is used console.writeline
         static void printCharsStringCw(string str, int count)
         {
             string result = null;
