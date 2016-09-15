@@ -24,6 +24,22 @@ namespace MyCSharpUsefulMethods
         }
 
 
+        static void printCharsStringCw(string str, int count)
+        {
+            string result = null;
+
+            for (int i = 0; i < count; i++)
+            {
+                result += str + " ";
+            }
+
+            Console.WriteLine(result);
+
+        }
+
+
+
+
 
 
 
@@ -33,6 +49,9 @@ namespace MyCSharpUsefulMethods
 
             string someText = printCharsString("Some text2", 5);
             Console.WriteLine(someText);
+
+
+            printCharsStringCw("Same function but no return value", 2);
 
            
         }
