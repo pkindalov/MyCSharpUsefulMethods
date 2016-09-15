@@ -41,6 +41,23 @@ namespace MyCSharpUsefulMethods
 
 
 
+        //write chars on console with parameter in char format. Method return string in result
+        static string printChars(char str, int count)
+        {
+            string result = null;
+
+            for (int i = 0; i < count; i++)
+            {
+                result += str;
+            }
+
+            return result;
+
+        }
+
+
+
+
 
 
 
@@ -53,6 +70,11 @@ namespace MyCSharpUsefulMethods
 
 
             printCharsStringCw("Same function but no return value", 2);
+
+
+            Console.WriteLine(printChars('*', 4));
+            string wayForUse2 = printChars('s', 5);
+            Console.WriteLine(wayForUse2);
 
            
         }
