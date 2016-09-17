@@ -100,7 +100,7 @@ namespace MyCSharpUsefulMethods
 
             if (!isColorFound)
             {
-                Console.WriteLine("Sorry no such color");
+                Console.WriteLine(text);
             }
 
 
@@ -132,8 +132,17 @@ namespace MyCSharpUsefulMethods
             Console.WriteLine(printCharsWL('@', 5));
 
 
+            coloringText("Some example in blue", "Blue");
 
-           
+            string text = "I am in red color";
+            coloringText(text, "Red");
+
+            string noSuchColor = "Sorry , no such color";
+            string colorName = "Pink";
+
+            coloringText(noSuchColor, colorName);
+
+
         }
     }
 }
