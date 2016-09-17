@@ -56,7 +56,21 @@ namespace MyCSharpUsefulMethods
         }
 
 
-       
+        //write chars on console with parameter in char format with new line. WL - writeLine
+        static string printCharsWL(char str, int count)
+        {
+            string result = null;
+
+            for (int i = 0; i < count; i++)
+            {
+                result += str + "\n";
+            }
+
+            return result;
+
+        }
+
+
 
 
 
@@ -77,6 +91,9 @@ namespace MyCSharpUsefulMethods
             Console.WriteLine(printChars('*', 4));
             string wayForUse2 = printChars('s', 5);
             Console.WriteLine(wayForUse2);
+
+
+            Console.WriteLine(printCharsWL('@', 5));
 
 
 
