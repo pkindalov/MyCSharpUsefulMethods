@@ -52,3 +52,19 @@
 		Result:
 		sssss
 		
+		
+		Next method is printCharsWL(char str, int count). It is very similar to printChars. Only difference is print every symbol on new line.
+		
+		Example:
+		
+		Console.WriteLine(printCharsWL('@', 5));
+		
+		Result:
+		
+		@
+		@
+		@
+		@
+		@
+		
+		
