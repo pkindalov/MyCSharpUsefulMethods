@@ -56,6 +56,8 @@ namespace MyCSharpUsefulMethods
         }
 
 
+       
+
 
 
 
@@ -75,6 +77,8 @@ namespace MyCSharpUsefulMethods
             Console.WriteLine(printChars('*', 4));
             string wayForUse2 = printChars('s', 5);
             Console.WriteLine(wayForUse2);
+
+
 
            
         }
