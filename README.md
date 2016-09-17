@@ -19,7 +19,7 @@
 		
 		Result: Some tex2 Some text2 Some tex2 Some text2 Some tex2
 		
-		==================================================================================================================================================================
+		
 		
 		Second method is like this on top but this time no return value
 	
@@ -31,4 +31,24 @@
 		
 		Same function but no return value Same function but no return value
 		
+		==================================================================================================================================================================
+
+		Next method printChars write chars on console with parameter in char format. Method return string in result
+		string printChars(char str, int count)
+		
+		Example:
+		
+		Console.WriteLine(printChars('*', 4));
+		
+		Result:
+		
+		****
+		
+		
+		Second way of use example:
+		string wayForUse2 = printChars('s', 5);
+        Console.WriteLine(wayForUse2);
+		
+		Result:
+		sssss
 		
