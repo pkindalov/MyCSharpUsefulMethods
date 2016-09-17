@@ -67,4 +67,31 @@
 		@
 		@
 		
+		==================================================================================================================================================================
+		
+		Next method method is for coloring given text - void coloringText(string text, string colourName).
+		Parameters are some string and colour name(It is IMPORTANT name of color to begin with Uppecase letter) , and if colour name exists, the string is colored with it.
+		
+		
+		Example of use:
+		
+		coloringText("Some example in blue", "Blue");
+		
+			or
+			
+		string text = "I am in red color";
+        coloringText(text, "Red");	
+		
+		Result: if red colour is added to dictionairy then the text string will be in red color. If the color is not added to dictionairy then the string variable
+		will be in default console color.
+	
+	
+		Second example show if the color which you want to color text don`t exists , then the string variable will be in default console color
+		
+		Example 2:
+		
+		 string noSuchColor = "Sorry , no such color";
+         string colorName = "Pink";
+		 
+		 Result: On console will be write noSuchColor variable in default console color. 
 		
