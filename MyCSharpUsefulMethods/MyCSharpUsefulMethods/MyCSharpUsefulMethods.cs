@@ -73,6 +73,42 @@ namespace MyCSharpUsefulMethods
 
 
 
+        //method for colorign given text. Parameters are some string and colour name , and if colour name exists, the string is colored with it.
+        static void coloringText(string text, string colourName)
+        {
+
+
+            Dictionary<string, ConsoleColor> colours = new Dictionary<string, ConsoleColor>();
+            colours.Add("Red", ConsoleColor.Red);
+            colours.Add("Blue", ConsoleColor.Blue);
+            colours.Add("Green", ConsoleColor.Green);
+            colours.Add("Cyan", ConsoleColor.Cyan);
+
+            bool isColorFound = false;
+
+            foreach (KeyValuePair<string, ConsoleColor> colors in colours)
+            {
+                if (colors.Key == colourName)
+                {
+                    isColorFound = true;
+                    Console.ForegroundColor = colors.Value;
+                    Console.WriteLine(text);
+                    Console.ResetColor();
+                }
+
+            }
+
+            if (!isColorFound)
+            {
+                Console.WriteLine("Sorry no such color");
+            }
+
+
+
+        }
+
+
+
 
 
 
