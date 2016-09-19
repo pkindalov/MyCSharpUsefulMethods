@@ -170,6 +170,15 @@ namespace MyCSharpUsefulMethods
             coloringText(noSuchColor, colorName);
 
 
+            consoleColor("Red");
+            Console.WriteLine("Text in red color");
+
+            Console.WriteLine();
+
+
+
+
+
         }
     }
 }

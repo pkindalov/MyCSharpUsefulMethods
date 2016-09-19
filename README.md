@@ -93,5 +93,17 @@
 		 string noSuchColor = "Sorry , no such color";
          string colorName = "Pink";
 		 
-		 Result: On console will be write noSuchColor variable in default console color. 
+		 Result: On console will be write noSuchColor variable in default console color.
+
+
+
+		Added method which accept for parameter color name and if this color exists in dictionary, change console font color on letters
+		
+		Example:
+		
+		consoleColor("Red");
+        Console.WriteLine("Text in red color");
+		
+		Result: 
+		Every text under consoleColor() will be colourful.
 		
