@@ -107,3 +107,21 @@
 		Result: 
 		Every text under consoleColor() will be colourful.
 		
+		
+		==================================================================================================================================================================
+		
+		Added a simple method resetColor() which just reset to default font color of letters. The method don`t accept any parameters.
+		
+		Example:
+		
+		consoleColor("Red");
+        Console.WriteLine("Text in red color");
+		
+		resetColor();
+		Console.WriteLine("Text with default font color");
+		
+		Result:
+		All text after resetColor() will be in default color.
+		
+		
+		
