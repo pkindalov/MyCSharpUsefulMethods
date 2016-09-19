@@ -104,6 +104,33 @@ namespace MyCSharpUsefulMethods
             }
 
 
+        }
+
+
+
+
+        //method which accept for parameter color name and if this color exists in dictionary, change console font color on letters
+        static void consoleColor(string color)
+        {
+            Dictionary<string, ConsoleColor> colours = new Dictionary<string, ConsoleColor>();
+            colours.Add("Red", ConsoleColor.Red);
+            colours.Add("Blue", ConsoleColor.Blue);
+            colours.Add("Green", ConsoleColor.Green);
+            colours.Add("Cyan", ConsoleColor.Cyan);
+
+            bool isColorFound = false;
+
+            foreach (KeyValuePair<string, ConsoleColor> colors in colours)
+            {
+                if (colors.Key == color)
+                {
+                    isColorFound = true;
+                    Console.ForegroundColor = colors.Value;
+                }
+
+
+            }
+
 
         }
 
