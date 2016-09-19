@@ -147,6 +147,54 @@ namespace MyCSharpUsefulMethods
 
 
 
+        //method for coloring background and text
+        static void colorBackAndText(string text, string lettersColor, string backgColor)
+        {
+            Dictionary<string, ConsoleColor> coloursNames = new Dictionary<string, ConsoleColor>();
+            coloursNames.Add("Red", ConsoleColor.Red);
+            coloursNames.Add("Blue", ConsoleColor.Blue);
+            coloursNames.Add("Green", ConsoleColor.Green);
+            coloursNames.Add("Cyan", ConsoleColor.Cyan);
+
+            bool isLetterColorFound = false;
+            bool isBackgroundColorFound = false;
+
+
+            foreach (KeyValuePair<string, ConsoleColor> backgroundColor in coloursNames)
+            {
+                if (backgroundColor.Key == backgColor)
+                {
+                    isBackgroundColorFound = true;
+                    Console.BackgroundColor = backgroundColor.Value;
+                }
+            }
+
+
+
+            foreach (KeyValuePair<string, ConsoleColor> lettColor in coloursNames)
+            {
+                if (lettColor.Key == lettersColor)
+                {
+                    isLetterColorFound = true;
+                    Console.ForegroundColor = lettColor.Value;
+                    Console.WriteLine(text);
+                    Console.ResetColor();
+                }
+            }
+
+            if (!isLetterColorFound && !isBackgroundColorFound)
+            {
+                Console.WriteLine(text);
+            }
+
+
+
+        }
+
+
+
+
+
 
         static void Main(string[] args)
         {
@@ -186,7 +234,10 @@ namespace MyCSharpUsefulMethods
             resetColor();
             Console.WriteLine("Text in default color");
 
+            Console.WriteLine();
 
+
+            colorBackAndText("Some text with blue background and red font color", "Red", "Blue");
 
 
 
