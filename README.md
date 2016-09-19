@@ -124,4 +124,14 @@
 		All text after resetColor() will be in default color.
 		
 		
+		====================================================================================================================================================================
+		
+		Added method static void colorBackAndText(string text, string lettersColor, string backgColor) for coloring background and text
+		
+		Example:
+		
+		colorBackAndText("Some text with blue background and red font color", "Red", "Blue");
+		
+		Result: 
+		Text will be in blue background and red color for letters.
 		
