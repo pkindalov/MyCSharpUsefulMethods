@@ -136,6 +136,14 @@ namespace MyCSharpUsefulMethods
 
 
 
+        //method which just reset original font color of letters
+        static void resetColor()
+        {
+            Console.ResetColor();
+        }
+
+
+
 
 
 
@@ -174,6 +182,9 @@ namespace MyCSharpUsefulMethods
             Console.WriteLine("Text in red color");
 
             Console.WriteLine();
+
+            resetColor();
+            Console.WriteLine("Text in default color");
 
 
 
